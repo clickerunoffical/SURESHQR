@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        body {
+        * {
             margin: 0;
-            height: 100vh;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             background-color: black;
             color: #00ff00;
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
+            padding: 10px;
         }
         img {
-            width: 80%;
-            max-width: 600px;
+            width: 100%;
+            max-width: 500px;
             border-radius: 10px;
-            margin-top: 20px;
+            margin-top: 10px;
             border: 2px solid #00ff00;
-            box-shadow: 0 0 15px #00ff00;
+            box-shadow: 0 0 10px #00ff00;
         }
         .login-container {
+            width: 90%;
+            max-width: 320px;
             background: rgba(0, 0, 0, 0.9);
             padding: 20px;
             border: 2px solid #00ff00;
             border-radius: 10px;
             box-shadow: 0 0 15px #00ff00;
-            text-align: center;
-            width: 300px;
             margin-top: 20px;
         }
         input {
@@ -62,56 +67,54 @@
         }
         .description {
             margin-top: 20px;
-            font-size: 1rem;
-            width: 80%;
-            max-width: 600px;
+            font-size: 0.9rem;
+            max-width: 400px;
         }
     </style>
 </head>
 <body>
-
+    <!-- Image at the top -->
     <img src="WhatsApp Image 2025-02-02 at 10.52.41_8083a66e.jpg" alt="Header Image">
-    
+
+    <!-- Login Form -->
     <div class="login-container">
-        <h1>Login</h1>
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="checkLogin()">Login</button>
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
     </div>
 
+    <!-- Description -->
     <p class="description">
         Five Souls, One Bench: A Journey of Friendship
 
 
-"Life is a beautiful journey, and the best part of it is the people we meet along the way. Kannan Bahi, Jabhay, Shashi, Aswin, and me – five of us, one bench, and countless memories that will forever remain etched in my heart.  
-
-From the laughter that echoed in the corridors to the silent moments of understanding, we’ve shared it all. Each of you has brought something unique to this bond – Kannan Bahi’s wisdom, Jabhay’s humor, Shashi’s calmness, Aswin’s energy, and the love we all share. Together, we’ve created a world of our own, a world where friendship knows no bounds.  
-
-As we move forward in life, I know that distance may separate us, but nothing can ever take away the memories we’ve built. The bench we shared was more than just a place to sit; it was a symbol of our togetherness, a witness to our dreams, struggles, and triumphs.  
-
-No matter where life takes us, I’ll always carry a piece of each of you with me. Here’s to the countless inside jokes, the late-night talks, the shared dreams, and the unbreakable bond we’ve formed. You’ve made my school life unforgettable, and I’m grateful for every moment we’ve spent together.  
-
-Let’s promise to stay connected, to cherish this friendship, and to create more memories in the years to come. Life may take us on different paths, but our hearts will always beat as one.  
-
-With all my love and gratitude,  
-ASWIN PRAKASH
-
-
-No matter where we go, our bench will always be waiting for us. 💙
-
-
+        "Life is a beautiful journey, and the best part of it is the people we meet along the way. Kannan Bahi, Jabhay, Shashi, Aswin, and me – five of us, one bench, and countless memories that will forever remain etched in my heart.  
+        
+        From the laughter that echoed in the corridors to the silent moments of understanding, we’ve shared it all. Each of you has brought something unique to this bond – Kannan Bahi’s wisdom, Jabhay’s humor, Shashi’s calmness, Aswin’s energy, and the love we all share. Together, we’ve created a world of our own, a world where friendship knows no bounds.  
+        
+        As we move forward in life, I know that distance may separate us, but nothing can ever take away the memories we’ve built. The bench we shared was more than just a place to sit; it was a symbol of our togetherness, a witness to our dreams, struggles, and triumphs.  
+        
+        No matter where life takes us, I’ll always carry a piece of each of you with me. Here’s to the countless inside jokes, the late-night talks, the shared dreams, and the unbreakable bond we’ve formed. You’ve made my school life unforgettable, and I’m grateful for every moment we’ve spent together.  
+        
+        Let’s promise to stay connected, to cherish this friendship, and to create more memories in the years to come. Life may take us on different paths, but our hearts will always beat as one.  
+        
+        With all my love and gratitude,  
+        ASWIN PRAKASH
+        
+        
+        No matter where we go, our bench will always be waiting for us. 💙
     </p>
 
     <script>
-        function checkLogin() {
-            var password = document.getElementById("password").value;
+        function login() {
+            let password = document.getElementById("password").value;
             if (password === "SI") {
                 window.location.href = "https://matrixclicker.wixsite.com/unidentified-product";
             } else {
-                alert("Incorrect password!");
+                alert("Incorrect Password!");
             }
         }
     </script>
-
 </body>
 </html>
